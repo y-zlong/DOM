@@ -1,3 +1,25 @@
 function pic(chengePic）  //写一个函数，起名字叫pic，给一个参数为"chengePic"；
 
+  // chengePic代表一个元素节点，只要获取这个元素节点的属性设置他的getAtteribute（）；他必然会是一个A元素传过来的图片，只要修改他的“href”就可以得到，把得到的“href”
+  //作为参数传给getAtteribute;
+  
+    chengePic.getAtteribute("href");
     
+    //把chengePic.getAtteribute("href")赋值给变量href；
+    
+    var href = chengePic.getAtteribute("href"); 
+    
+    //获取占位符
+    
+    var box =douvment.getElementById("element");
+    
+    
+    
+    代码清单整合：
+            
+            function pic(chengePic）{
+                var href = chengePic.getAtteribute("href");
+                var box =douvment.getElementById("element");
+                box.setAtteribute("src",href);
+    }
+            
